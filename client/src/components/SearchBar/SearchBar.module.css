@@ -1,0 +1,25 @@
+.input {
+  font-size: 1.3em;
+  text-align: center;
+  margin-top: 0px;
+  margin-left: 18rem;
+  border: 3px;
+  border-style: solid;
+  border-color: green;
+  border-radius: 0px;
+  box-shadow: 0px 0px 5px 2px white;
+  transition: all 0.3s;
+}
+.input:hover {
+  transform: scale(1.1);
+  transition-delay: 0.3s;
+}
+
+@media screen and (max-width: 900px) {
+  .input {
+    width: 50%;
+    margin: 0px;
+    font-size: 1em;
+    margin-left: 5px;
+  }
+}

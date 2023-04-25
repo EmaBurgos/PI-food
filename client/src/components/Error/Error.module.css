@@ -1,0 +1,26 @@
+.view {
+  margin-top: 140px;
+  padding-top: 20px;
+  height: 98vh;
+  background-image: url("C:\Users\ema\Desktop\A ULTIMO\PI-FOOD-MAIN-main\client\src\assets\images\errorBG.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.title {
+  font-size: 5em;
+  text-align: center;
+  margin-top: 150px;
+  margin-left: 150px;
+  color: whitesmoke;
+  text-shadow: 3px 3px 8px #db363b;
+  text-decoration: overline;
+}
+@media screen and (max-width: 900px) {
+  .view {
+    margin-top: 40px;
+  }
+  .title {
+    font-size: 3em;
+    margin-left: 0px;
+  }
+}

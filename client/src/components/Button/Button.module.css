@@ -1,0 +1,35 @@
+.button {
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 3px 3px 8px black;
+  transition: all 0.3s;
+  text-shadow: 1px 1px 3px black;
+  background: rgb(47, 103, 42, 0.904);
+  padding: 1.1em 2em;
+  margin: 20px;
+  border: 2px solid white;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  font-weight: bolder;
+}
+.noButton {
+  display: none;
+}
+
+.button:hover {
+  background-color: white;
+  color: rgb(47, 103, 42, 0.904);
+  border: 2px solid rgb(47, 103, 42, 0.904);
+}
+
+.button:hover::before {
+  transform: skewX(30deg) translate(150%, -50%);
+  transition-delay: 0.1s;
+}
+
+.button:active {
+  transform: scale(0.9);
+}

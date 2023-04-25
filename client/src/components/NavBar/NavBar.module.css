@@ -1,0 +1,111 @@
+.navBar {
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  background: #416240;
+  background-image: url("C:\Users\ema\Desktop\A ULTIMO\PI-FOOD-MAIN-main\client\src\assets\images\NavBarBG.jpg");
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 120px;
+  text-shadow: 2px 2px 3px black;
+  color: white;
+  transition: 0.3s ease-in-out;
+  border-color: #10180f;
+  border-style: solid;
+  z-index: 1000;
+}
+
+.navBar:hover {
+  background-color: rgb(24, 54, 26);
+  color: #4cdb36;
+}
+.navBar:hover::before {
+  transform: skewX(330deg) translate(650%, -58%);
+  transition-delay: 0.1s;
+}
+.logo {
+  height: 80%;
+  margin-top: 10px;
+  margin-left: 25px;
+}
+.menuContainer {
+  display: flex;
+  justify-content: right;
+  margin-right: 250px;
+  margin-top: 60px;
+}
+
+.menuText {
+  font-size: 1.5em;
+  display: flex;
+  padding: 10px;
+  margin: -29px;
+  padding-top: 9px;
+  padding-right: 150px;
+  padding-left: 163px;
+  text-decoration: underline;
+  transition: 0.3s ease-in-out;
+  
+}
+.menuText:hover {
+  transform: scale(0.9);
+  transition-delay: 0.3s;
+}
+.menuText:visited {
+  color: white;
+}
+.active {
+  font-size: 1.5em;
+  display: flex;
+  padding: 10px;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+  transform: scale(1.2);
+  transition-delay: 0.3s;
+  margin-left: 20px;
+  padding-bottom: 360px;
+}
+
+.active:visited {
+  color: white;
+}
+.searchContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin:-48px ;
+  margin-left: 93px;
+
+}
+@media screen and (max-width: 900px) {
+  .navBar {
+    height: 20px;
+  }
+  .searchContainer {
+    justify-content: center;
+    align-items: center;
+  }
+  .logo {
+    height: 20px;
+    width: 30px;
+    margin-left: 5px;
+  }
+  .menuContainer {
+    margin-top: 0px;
+    margin-right: 70px;
+  }
+  .menuText {
+    font-size: 1em;
+    align-items: center;
+    padding: 5px;
+  }
+  .active {
+    font-size: 1em;
+    align-items: center;
+    padding: 5px;
+  }
+}

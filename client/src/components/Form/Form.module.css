@@ -1,0 +1,93 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: max-content;
+  margin-top: 140px;
+  background-image: url("C:\Users\ema\Desktop\A ULTIMO\PI-FOOD-MAIN-main\client\src\assets\images\formBG.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  color: white;
+}
+.title {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 150px;
+  
+  font-size: 3.5em;
+  text-shadow: 3px 3px 3px #47db36;
+  color: green;
+}
+.form {
+  background: rgba(61, 103, 42, 0.907);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  height: max-content;
+  align-self: center;
+  margin-bottom: 50px;
+  text-shadow: 2px 2px 3px black;
+  border-radius: 40px;
+}
+.input {
+  font-size: 1.3em;
+  text-align: center;
+  width: 500px;
+  margin: 20px;
+  border: 0px;
+  border-radius: 3px;
+  box-shadow: 3px 3px 8px black;
+  transition: all 0.3s;
+}
+.input:hover {
+  transform: scale(1.05);
+  transition-delay: 0.3s;
+}
+.label {
+  font-size: 1.5em;
+
+  margin: 20px;
+}
+.button {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.error {
+  font-size: 1.3em;
+  text-align: center;
+  width: 500px;
+  margin: 20px;
+  border: 0px;
+  border-radius: 3px;
+  color: white;
+  background-color: #db363b;
+  box-shadow: 3px 3px 8px black;
+}
+.msgError {
+  margin: 15px;
+  font-size: 1.3em;
+  color: black;
+  text-shadow: 2px 2px 3px white;
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    margin-top: 40px;
+    padding-bottom: 130px;
+  }
+  .title {
+    font-size: 3em;
+    margin: 0px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+}
+.checkbox {
+  width: 20px;
+  height: 20px;
+}

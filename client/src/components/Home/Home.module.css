@@ -1,0 +1,58 @@
+.home {
+  margin-top: 140px;
+  width: 100%;
+  background-image: url("C:\Users\ema\Desktop\A ULTIMO\PI-FOOD-MAIN-main\client\src\assets\images\fondoHome.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.title {
+  font-size: 3em;
+  text-align: left;
+  margin-left: 330px;
+  color: rgb(18, 89, 21);
+  text-shadow: 3px 3px 3px #2e4b2a;
+  
+}
+.loading {
+  font-size: 3.5em;
+  text-align: center;
+  margin-top: 150px;
+  color: rgb(28, 88, 28);
+  border-color: black;
+}
+
+.buttonsContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.menu {
+  font-size: 1.3em;
+  text-align: center;
+  background: rgba(47, 103, 42, 0.904);
+  border: 1px solid white;
+  color: white;
+  text-shadow: 2px 2px 3px black;
+  height: max-content;
+  padding: 2px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 8px black;
+}
+@media screen and (max-width: 900px) {
+  .home {
+    margin-top: 40px;
+    padding-top: 5px;
+    padding-bottom: 40px;
+  }
+  .title {
+    font-size: 3em;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+
+  .loading {
+    font-size: 1.5em;
+  }
+}

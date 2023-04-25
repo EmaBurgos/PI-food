@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin-top: 5px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-family: Helvetica, sans-serif;
+  background-color: #416240;
+  -webkit-text-fill-color: yellowgreen;
+  -webkit-text-stroke: 0.5px black;
+  font-size: 25px;
+}
+
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+@media screen and (max-width: 900px) {
+  .text {
+    font-size: 0.5em;
+  }
+}
