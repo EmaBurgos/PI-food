@@ -10,10 +10,10 @@ const Form = () => {
   const diets = useSelector((state) => state.diets);
 
   useEffect(() => {
-    dispatch(getDiets());
+    dispatch(getDiets());       // trae mis dietas
   }, [dispatch]);
 
-  const [form, setForm] = useState({
+  const [form, setForm] = useState({                   //mi estado local
     title: "",
     summary: "",
     healthScore: 0,
@@ -22,7 +22,7 @@ const Form = () => {
     diets: [],
   });
 
-  const [errors, setErrors] = useState({
+  const [errors, setErrors] = useState({            //mi estado local de error
     title: "",
     summary: "",
     healthScore: "",
@@ -33,7 +33,7 @@ const Form = () => {
   const setUnChecked = (boolean) => {
     return boolean;
   };
-  const handleChange = (event) => {
+  const handleChange = (event) => {                  // se encarga de mi estado local
     const value = event.target.value;
     const target = event.target.name;
 
@@ -53,10 +53,10 @@ const Form = () => {
     } else {
       setForm({ ...form, [target]: value });
 
-      validation({ ...form, [target]: value }, errors, setErrors, target);
+      validation({ ...form, [target]: value }, errors, setErrors, target);          //valida los errores
     }
   };
-  setUnChecked(true);
+  setUnChecked(true);                             //si se creo correctamente
   const handleSubmit = (event) => {
     event.preventDefault();
     alert("Recipe created successfully");

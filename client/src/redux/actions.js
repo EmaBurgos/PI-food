@@ -18,10 +18,15 @@ export const filter = (judgment) => {
   return { type: FILTER, payload: judgment };
 };
 export const postRecipe = (recipe) => {
-  return async function () {
-    await axios.post(URL_RECIPES, recipe).then((res) => {
-      return res.data;
-    });
+  return async function () { 
+    try {
+      await axios.post(URL_RECIPES, recipe).then((res) => {
+        alert("Recipe created successfully");
+        return res.data;
+      });   
+    } catch (error) {
+      alert("Server Error");
+    }
   };
 };
 

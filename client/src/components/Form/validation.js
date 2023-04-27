@@ -33,7 +33,7 @@ export const validation = (form, errors, setErrors, target) => {
       setErrors({
         ...errors,
         image:
-          "Invalid URL, try an ULR like: https://github.com/martinellilucas",
+          "Invalid URL, try https://img.freepik.com/vector-premium/corazon-vegetales-verdes-frutas_53562-4713.jpg?w=2000",
       });
     } else setErrors({ ...errors, image: "" });
   }

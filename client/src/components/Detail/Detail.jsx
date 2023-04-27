@@ -5,17 +5,19 @@ import { addRecipeDetail, cleanDetail } from "../../redux/actions";
 import style from "./Detail.module.css";
 
 export const Detail = () => {
-  const { recipeDetail } = useSelector((state) => state);
+  const { recipeDetail } = useSelector((state) => state); //traigo el estado global
   const { id } = useParams();
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(addRecipeDetail(id));
+    dispatch(addRecipeDetail(id));  //dispatch a la action que obtiene los detalles de la receta segun id
     return () => {
-      dispatch(cleanDetail());
+      dispatch(cleanDetail());    //limpia la pagina
     };
   }, [id, dispatch]);
 
+
+  //utilizo el replace porque la api me trae las etiquetas html
   return (
     <div className={style.detailView}>
       <h1 className={style.detailTitle}>Recipe Detail: </h1>
@@ -27,7 +29,7 @@ export const Detail = () => {
           <h2 className={style.subTitle}>Summary</h2>
           <hr className={style.separator}></hr>
           <p className={style.text}>
-            {recipeDetail.summary.replace(/<[^>]*>/g, "")}
+            {recipeDetail.summary.replace(/<[^>]*>/g, "")}  
           </p>
           <hr className={style.separator}></hr>
           <p className={style.text}>Health Score: {recipeDetail.healthScore}</p>

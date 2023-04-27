@@ -1,5 +1,5 @@
 import style from "./Footer.module.css";
-
+// mi componente footer
 const Footer = () => {
   return (
     <div className={style.container}>

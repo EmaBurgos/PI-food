@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
-//import Button from "../Button/Button";
 import style from "./Landing.module.css";
 
+
+//mi landing page
 const Landing = () => {
   return (
     <div className={style.Contenedor}>
@@ -21,7 +22,6 @@ const Landing = () => {
           </h4>
           <Link to={"/home"} className={style.Boton}>
             GOO!
-            {/* <button className={styles.Boton}>Next</button> */}
           </Link>
         </div>
       </div>

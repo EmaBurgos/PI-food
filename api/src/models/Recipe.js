@@ -9,11 +9,14 @@ module.exports = (sequelize) => {
       id: {
         type: DataTypes.UUID,
         defaultValue: DataTypes.UUIDV1,
+        allowNull: false,
         primaryKey: true,
       },
       title: {
         type: DataTypes.STRING,
         allowNull: false,
+        unique:true,
+        validate: {notEmpty: true}
       },
       image: {
         type: DataTypes.STRING,
@@ -24,7 +27,8 @@ module.exports = (sequelize) => {
       },
       healthScore: {
         type: DataTypes.INTEGER,
-        allowNullL: false,
+        allowNull: false,
+        validate: {min: 0, max: 100},
       },
       instructions: {
         type: DataTypes.STRING,

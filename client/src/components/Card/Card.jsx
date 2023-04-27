@@ -1,6 +1,6 @@
 import style from "./Card.module.css";
 import { Link } from "react-router-dom";
-const Card = ({ name, image, id, healthScore, diets }) => {
+const Card = ({ name, image, id, healthScore, diets }) => {    //mapea los datos y lleva al detail al hacer clic
   return (
     <Link className={style.card} to={`/detail/${id}`}>
       <h1 className={style.title}>{name}</h1>

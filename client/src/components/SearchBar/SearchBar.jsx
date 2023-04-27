@@ -5,15 +5,15 @@ import { getRecipes, searchRecipe } from "../../redux/actions";
 
 const SearchBar = () => {
   const dispatch = useDispatch();
-  const [search, setSearch] = useState("");
+  const [search, setSearch] = useState("");       // mi estado local
 
   const handleChange = (event) => {
-    const value = event.target.value;
+    const value = event.target.value;           //cambia mi estado
     setSearch(value);
   };
   const handleKeyPressed = (event) => {
     const key = event.key;
-    if (search.length && key === "Enter") dispatch(searchRecipe(search));
+    if (search.length && key === "Enter") dispatch(searchRecipe(search));   // buscar la receta despues del enter
     else dispatch(getRecipes());
   };
   return (
